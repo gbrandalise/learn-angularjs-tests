@@ -1,5 +1,5 @@
 // Karma configuration
-// Generated on Fri Sep 10 2021 11:34:27 GMT-0300 (Horário Padrão de Brasília)
+// Generated on Tue Sep 28 2021 18:23:02 GMT-0300 (Horário Padrão de Brasília)
 
 module.exports = function(config) {
   config.set({
@@ -10,13 +10,16 @@ module.exports = function(config) {
 
     // frameworks to use
     // available frameworks: https://www.npmjs.com/search?q=keywords:karma-adapter
-    frameworks: ['jasmine'],
+    frameworks: [
+      'jasmine-es6', 
+      'jasmine'
+    ],
 
 
     // list of files / patterns to load in the browser
     files: [
-      'node_modules/angular/angular.min.js',
-      'node_modules/angular-ui-router/release/angular-ui-router.min.js',
+      './node_modules/angular/angular.min.js',
+      './node_modules/angular-mocks/angular-mocks.js',
       'app/**/*.js'
     ],
 
