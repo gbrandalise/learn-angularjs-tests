@@ -8,11 +8,13 @@
         <title>Tests AngularJS</title>
         <script src="../node_modules/angular/angular.min.js"></script>
         <script src="app.js"></script>
+        <script src="sample.service.js"></script>
         <script src="sample.controller.js"></script>
     </head>
 
-    <body ng-controller="SampleController">
+    <body ng-controller="sampleController">
         <div>{{title}}</div>
+        {{data}}
     </body>
 
 </html>

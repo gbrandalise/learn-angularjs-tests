@@ -1,9 +1,12 @@
 (() => {
     'use strict';
     angular.module('sampleApp')
-        .controller('SampleController', SampleController);
+        .controller('sampleController', sampleController);
 
-    function SampleController($scope) {
+    function sampleController($scope, sampleService) {
         $scope.title = 'Tests AngularJS';
+        sampleService.findAll().then((response) => {
+            $scope.data = response.data;
+        });
     }
 })();
