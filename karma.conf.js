@@ -11,7 +11,6 @@ module.exports = function(config) {
     // frameworks to use
     // available frameworks: https://www.npmjs.com/search?q=keywords:karma-adapter
     frameworks: [
-      'jasmine-es6', 
       'jasmine'
     ],
 
@@ -32,6 +31,7 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://www.npmjs.com/search?q=keywords:karma-preprocessor
     preprocessors: {
+      'app/**/*.js': ["babel"],
     },
 
 
@@ -69,6 +69,13 @@ module.exports = function(config) {
 
     // Concurrency level
     // how many browser instances should be started simultaneously
-    concurrency: Infinity
+    concurrency: Infinity,
+    "babelPreprocessor": {
+      // options go here
+      options: {
+        presets: ["@babel/preset-env"],
+        sourceMap: "inline"
+      },
+    }
   })
 }

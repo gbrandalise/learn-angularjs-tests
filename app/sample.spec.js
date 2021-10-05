@@ -1,5 +1,5 @@
-describe("Sample test", function () {
-  it("Condition is true", function () {
+describe("Sample test", () => {
+  it("Condition is true", () => {
     expect("AngularJS").toBe("AngularJS");
   });
 });

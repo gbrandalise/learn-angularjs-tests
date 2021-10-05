@@ -10,11 +10,13 @@
     "angular": "^1.8.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
     "angular-mocks": "^1.8.2",
     "jasmine": "^3.9.0",
     "karma": "^6.3.4",
+    "karma-babel-preprocessor": "^8.0.1",
     "karma-jasmine": "^4.0.1",
-    "karma-jasmine-es6": "0.0.3",
     "karma-phantomjs-launcher": "^1.0.4",
     "phantomjs": "^2.1.7"
   }

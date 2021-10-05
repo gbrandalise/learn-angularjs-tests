@@ -6,7 +6,7 @@
 
 `npm install angular`
 
-`npm install karma jasmine karma-jasmine-es6 phantomjs angular-mocks --save-dev`
+`npm install karma jasmine phantomjs angular-mocks karma-babel-preprocessor @babel/core @babel/preset-env --save-dev`
 
 `npm install -g karma-cli`
 
